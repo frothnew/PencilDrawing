@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/*clear*/
+*{padding:0;margin:0;}
+
+
+body{background:url(../images/icon/bg0.png) repeat repeat;}
+
+
+
+.page{overflow: hidden;}
+
+/*
+.page1{background:url(../images/icon/bg1.png) repeat repeat;}
+.page2{background:url(../images/icon/bg2.png) repeat repeat;}
+.page3{background:url(../images/icon/bg3.png) repeat repeat;}
+.page4{background:url(../images/icon/bg4.png) repeat repeat;}*/
+
+
+

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Pencil Drawing</title>
+<!--先加载动画-->
+<link rel="stylesheet" type="text/css" href="css/plane.css"/>
+<!--初始化-->
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<!--主CSS-->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--全屏滚动样式样式-->
+<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
+<!--city-->
+<link rel="stylesheet" type="text/css" href="css/city.css"/>
+<!--视差-->	
+<link rel="stylesheet" type="text/css" href="css/devil.css"/>
+<!--naruto-->
+<link rel="stylesheet" type="text/css" href="css/naruto.css"/>
+<!--dice-->
+<link rel="stylesheet" type="text/css" href="css/dice.css"/>
+<!--响应式-->
+<link rel="stylesheet" type="text/css" href="css/media.css" />
+
+<!--主jquery-1.9.0-->
+<script src="js/jquery-1.9.0.min.js"></script>
+<!--全屏滚动-->
+<script src="js/jquery.onepage-scroll.min.js"></script>
+<!--视差-->
+<script type="text/javascript" src="js/jquery.parallax.min.js"></script>
+<!--city-->
+<script type="text/javascript" src="js/jquery.let_it_snow.min.js"></script>
+<!--2017.11.26 onepage启动-->
+<script type="text/javascript" src="js/jquery.onepage-scroll-animation.min.js"></script>
+
+</head>
+
+<body ondragstart="return false" oncontextmenu="return false">
+	<!--纯css3加载动画-->
+	<div id="progress">
+		<div class="cloud cloud-a">
+			<div class="line-a"></div>
+			<div class="line-b"></div>
+			<div class="line-c"></div>
+			<div class="line-d"></div>
+			<div class="line-e"></div>
+		</div>		
+		<div class="plane">
+			<div class="wings">
+				<div class="fan">
+					<div class="fan-wings">
+						<div class="fan-a"></div>
+						<div class="fan-b"></div>
+						<div class="fan-c"></div>
+						<div class="fan-d"></div>
+					</div>
+				</div>
+				<div class="cat">
+					<div class="legs"></div>
+				</div>
+			</div>
+			<div class="wheel">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+		</div>		
+		<div class="cloud cloud-b">
+			<div class="line-a"></div>
+			<div class="line-b"></div>
+			<div class="line-c"></div>
+			<div class="line-d"></div>
+			<div class="line-e"></div>
+		</div>
+	</div>
+	<!--纯css3加载动画-->
+	
+	
+    <main>
+		<div class="page page1">
+			<!--city-->
+			<ul id="city" class="city">
+				<!--snow-->
+				<li class="layer city-snow" data-depth="0"><canvas class="snow"></canvas></li>
+				<li class="layer city-middle" data-depth="0"></li>
+				<li class="layer cloud2" data-depth="0.1"></li>
+				<li class="layer city-front3" data-depth="0.2"></li>
+				<li class="layer cloud1" data-depth="0.8"></li>
+				<li class="layer city-front2" data-depth="0.4"></li>
+				<li class="layer city-front1" data-depth="0.6"></li>
+			</ul>
+			
+			<!--snow Scripts-->
+			<script type="text/javascript">
+				  $(document).ready( function() {
+						$("canvas.snow").let_it_snow({
+						    speed: 0,					//速度 0-5，默认0						    
+						    interaction: true,			//交互，默认true
+						    size: 3,					//平均大小0-10，默认2
+						    count: 200,					//count数量，默认200
+						    opacity: 0,					//平均透明度，0.0-1.0，默认0
+						    color: "#000008",			//颜色，默认"#ffffff"
+						    windPower: 0,				//风吹的方向，左向右为正，默认0
+						    image: false				//图片的URL，默认false
+						});
+				  });
+			</script>					
+			
+			<!--city Scripts-->
+			<script>		
+				// Yep, that's it!
+				$('#city').parallax({
+					  calibrateX: false,
+					  calibrateY: false,
+					  invertX: false,
+					  invertY: false,
+					  limitX: false,
+					  limitY: false,
+					  scalarX: 15,
+					  scalarY: 0,
+					  frictionX: 0.06,
+					  frictionY: 0.06
+				});
+			</script>
+		</div>
+		
+		<div class="page page2">
+			<!--devil视差-->
+			<ul id="devil" class="devil">
+				<li class="layer" data-depth="0.1"><div id="devil-di"></div></li>
+				<li class="layer" data-depth="0.1"><div id="devil-xian"></div></li>
+				<li class="layer" data-depth="0.2"><div id="devil-shan2"></div></li>
+				<li class="layer" data-depth="0.2"><div id="devil-shan1"></div></li>	
+				<li class="layer" data-depth="0.3"><div id="devil-face"></div></li>
+				<li class="layer" data-depth="0.35"><div id="devil-earl"></div></li>
+				<li class="layer" data-depth="0.35"><div id="devil-earr"></div></li>
+				<li class="layer" data-depth="0.4"><div id="devil-eay"></div></li>
+				<li class="layer" data-depth="0.4"><div id="devil-mouse"></div></li>
+				<li class="layer" data-depth="0.36"><div id="devil-flash2"></div></li>
+				<li class="layer" data-depth="0.35"><div id="devil-flash1"></div></li>
+				<li class="layer" data-depth="0.4"><div id="devil-ba"></div></li>
+				<li class="layer" data-depth="0.4"><div id="devil-you"></div></li>
+			</ul>
+			<!--devil视差Scripts-->
+			<script>		
+				// Yep, that's it!
+				$('#devil').parallax({
+					  calibrateX: false,	//校准
+					  calibrateY: false,
+					  invertX: false,		//反向
+					  invertY: false,
+					  limitX: false,		//限制  10
+					  limitY: 25,
+					  scalarX: 20,			//跟随幅度
+					  scalarY: 15,			
+					  frictionX: 0.1,		//跟随速度
+					  frictionY: 0.1		
+				});
+				
+				
+				$('li.layer div').css('width',$('li.layer div').css('height'));
+				$(window).resize(function(){
+					$('li.layer div').css('width',$('li.layer div').css('height'));
+				})
+						
+				
+				// 禁止图片拖拽
+				$('#devil li').attr({ondragstart:"return false",oncontextmenu:"return false"});
+			</script>	
+		</div>
+		
+		<div class="page page3">
+			<!--naruto-->
+		    <div id="narutoview">
+				<div class="float naruto1">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture1"></div>
+			   	</div>
+				<div class="float naruto2">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture2"></div>
+			   	</div>
+				<div class="float naruto3">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture3"></div>
+			   	</div>
+				<div class="float naruto4">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture4"></div>
+			   	</div>
+				<div class="float naruto5">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture5"></div>
+			   	</div>
+				<div class="float naruto6">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture6"></div>
+			   	</div>
+				<div class="float naruto7">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture7"></div>
+			   	</div>
+				<div class="float naruto8">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture8"></div>
+			   	</div>
+				<div class="float naruto9">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture9"></div>
+			   	</div>
+				<div class="float naruto10">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture10"></div>
+			   	</div>
+				<div class="float naruto11">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture11"></div>
+			   	</div>
+				<div class="float naruto12">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture12"></div>
+			   	</div>
+				<div class="float naruto13">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture13"></div>
+			   	</div>
+				<div class="float naruto14">
+			        <div class="oneside side1"></div>
+			        <div class="oneside side2"></div>
+			        <div class="oneside side3"></div>
+			        <div class="oneside side4"></div>
+			        <div class="narutopicture" id="narutopicture14"></div>
+			   </div>
+		    </div>		    
+		</div>
+				
+		<div class="page page4">
+			<!--dice-->
+			<div id="dice">
+				<div class="danmian">
+			        <div class="xiaomian" id="mian1"></div>
+			        <div class="xiaomian" id="mian2"></div>
+			        <div class="xiaomian" id="mian3"></div>
+			        <div class="xiaomian" id="mian4"></div>
+			        <div class="xiaomian" id="mian5"></div>
+			        <div class="xiaomian" id="mian6"></div>
+			   	</div>
+		    </div>
+		</div>
+    </main>
+    <footer>   		
+    </footer>
+</body>
+</html>

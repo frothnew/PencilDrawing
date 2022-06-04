@@ -1,0 +1,155 @@
+ul.devil{display:block;margin:auto;padding:0;position: absolute;
+		left: 0;right: 0;top: 0;bottom: 0;    	
+    	/*border: 1px solid #521E18;*/
+    	height: 100%;}
+    	
+ul.devil li{display: block;width:100%;height: 900px;text-align: center;}
+ul.devil li div{height: 100%;margin: 0 auto;background:url(../images/devil/devil.png) no-repeat;
+position: absolute;top:-1000px;
+}
+
+div#devil-shan2{background-position:0px 0px;}
+div#devil-shan1{background-position:-900px 0px;}
+div#devil-flash1{background-position:-1800px 0px;}
+div#devil-eay{background-position:-2700px 0px;}
+div#devil-flash2{background-position:-3600px 0px;}
+div#devil-mouse{background-position:-4500px 0px;}
+div#devil-earl{background-position:-5400px 0px;}
+div#devil-earr{background-position:0px -900px;}
+div#devil-face{background-position:-900px -900px;}
+div#devil-ba{background-position:-1800px -900px;}
+div#devil-you{background-position:-2700px -900px;}
+div#devil-di{background-position:-3600px -900px;}
+div#devil-xian{background-position:-4500px -900px;}	
+
+
+
+@-webkit-keyframes devilscani
+{
+    0% {left: 0; top: -100%; right: 0; bottom: 0;margin: auto;}
+	50%{left: 0; top: 300px; right: 0; bottom: 0;margin: auto;}
+	100%{left: 0; top: 0; right: 0; bottom: 0;margin: auto;}
+}
+@keyframes devilscani
+{
+    0% {left: 0; top: -100%; right: 0; bottom: 0;margin: auto;}
+	50%{left: 0; top: 300px; right: 0; bottom: 0;margin: auto;}
+	100%{left: 0; top: 0; right: 0; bottom: 0;margin: auto;}
+}
+
+@-webkit-keyframes devilscani2
+{
+    0% {left: 0; top: 0; right: 0; bottom: -100%;margin: auto;}
+	50%{left: 0; top: 0; right: 0; bottom: 300px;margin: auto;}
+	100%{left: 0; top: 0; right: 0; bottom: 0;margin: auto;}
+}
+@keyframes devilscani2
+{
+    0% {left: 0; top: 0; right: 0; bottom: -100%;margin: auto;}
+	50%{left: 0; top: 0; right: 0; bottom: 300px;margin: auto;}
+	100%{left: 0; top: 0; right: 0; bottom: 0;margin: auto;}
+}
+
+@-webkit-keyframes devilscani3
+{
+    0% {left: -100%; top: 0; right: 0; bottom: 0;margin: auto;}
+	50%{left: 50%; top: 0; right: 0; bottom: 0;margin: auto;}
+	100%{left: 0; top: 0; right: 0; bottom: 0;margin: auto;}
+}
+@keyframes devilscani3
+{
+    0% {left: -100%; top: 0; right: 0; bottom: 0;margin: auto;}
+	50%{left: 50%; top: 0; right: 0; bottom: 0;margin: auto;}
+	100%{left: 0; top: 0; right: 0; bottom: 0;margin: auto;}
+}
+
+@-webkit-keyframes devilscani4
+{
+    0% {left: 0; top: 0; right: -100%; bottom: 0;margin: auto;}
+	50%{left: 0; top: 0; right: 50%; bottom: 0;margin: auto;}
+	100%{left: 0; top: 0; right: 0; bottom: 0;margin: auto;}
+}
+@keyframes devilscani4
+{
+    0% {left: 0; top: 0; right: -100%; bottom: 0;margin: auto;}
+	50%{left: 0; top: 500px; right: 50%; bottom: 0;margin: auto;}
+	100%{left: 0; top: 0; right: 0; bottom: 0;margin: auto;}
+}
+
+div.scani#devil-di{
+animation: devilscani 1s cubic-bezier(0,.99,1,.01) forwards;
+-moz-animation: devilscani 1s cubic-bezier(0,.99,1,.01) forwards;	/* Firefox */
+-webkit-animation: devilscani 1s cubic-bezier(0,.99,1,.01) forwards;	/* Safari 和 Chrome */
+-o-animation: devilscani 1s cubic-bezier(0,.99,1,.01) forwards;	/* Opera */}
+
+div.scani#devil-xian{
+animation: devilscani2 1s cubic-bezier(0,.99,1,.01) 1.2s forwards;
+-moz-animation: devilscani2 1s cubic-bezier(0,.99,1,.01) 1.2s forwards;	/* Firefox */
+-webkit-animation: devilscani2 1s cubic-bezier(0,.99,1,.01) 1.2s forwards;	/* Safari 和 Chrome */
+-o-animation: devilscani2 1s cubic-bezier(0,.99,1,.01) 1.2s forwards;	/* Opera */}
+
+div.scani#devil-shan2{
+animation: devilscani4 1s cubic-bezier(0,.99,1,.01) 1.4s forwards;
+-moz-animation: devilscani4 1s cubic-bezier(0,.99,1,.01) 1.4s forwards;	/* Firefox */
+-webkit-animation: devilscani4 1s cubic-bezier(0,.99,1,.01) 1.4s forwards;	/* Safari 和 Chrome */
+-o-animation: devilscani4 1s cubic-bezier(0,.99,1,.01) 1.4s forwards;	/* Opera */}
+
+div.scani#devil-shan1{
+animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 1.6s forwards;
+-moz-animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 1.6s forwards;	/* Firefox */
+-webkit-animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 1.6s forwards;	/* Safari 和 Chrome */
+-o-animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 1.6s forwards;	/* Opera */}
+
+div.scani#devil-face{
+animation: devilscani 1s cubic-bezier(0,.99,1,.01) 1.8s forwards;
+-moz-animation: devilscani 1s cubic-bezier(0,.99,1,.01) 1.8s forwards;	/* Firefox */
+-webkit-animation: devilscani 1s cubic-bezier(0,.99,1,.01) 1.8s forwards;	/* Safari 和 Chrome */
+-o-animation: devilscani 1s cubic-bezier(0,.99,1,.01) 1.8s forwards;	/* Opera */}
+
+div.scani#devil-earl{
+animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 2s forwards;
+-moz-animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 2s forwards;	/* Firefox */
+-webkit-animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 2s forwards;	/* Safari 和 Chrome */
+-o-animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 2s forwards;	/* Opera */}
+
+div.scani#devil-earr{
+animation: devilscani4 1s cubic-bezier(0,.99,1,.01) 2.2s forwards;
+-moz-animation: devilscani4 1s cubic-bezier(0,.99,1,.01) 2.2s forwards;	/* Firefox */
+-webkit-animation: devilscani4 1s cubic-bezier(0,.99,1,.01) 2.2s forwards;	/* Safari 和 Chrome */
+-o-animation: devilscani4 1s cubic-bezier(0,.99,1,.01) 2.2s forwards;	/* Opera */}
+
+div.scani#devil-eay{
+animation: devilscani 1s cubic-bezier(0,.99,1,.01) 2.4s forwards;
+-moz-animation: devilscani 1s cubic-bezier(0,.99,1,.01) 2.4s forwards;	/* Firefox */
+-webkit-animation: devilscani 1s cubic-bezier(0,.99,1,.01) 2.4s forwards;	/* Safari 和 Chrome */
+-o-animation: devilscani 1s cubic-bezier(0,.99,1,.01) 2.4s forwards;	/* Opera */}
+
+div.scani#devil-mouse{
+animation: devilscani2 1s cubic-bezier(0,.99,1,.01) 2.6s forwards;
+-moz-animation: devilscani2 1s cubic-bezier(0,.99,1,.01) 2.6s forwards;	/* Firefox */
+-webkit-animation: devilscani2 1s cubic-bezier(0,.99,1,.01) 2.6s forwards;	/* Safari 和 Chrome */
+-o-animation: devilscani2 1s cubic-bezier(0,.99,1,.01) 2.6s forwards;	/* Opera */}
+
+div.scani#devil-flash2{
+animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 2.8s forwards;
+-moz-animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 2.8s forwards;	/* Firefox */
+-webkit-animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 2.8s forwards;	/* Safari 和 Chrome */
+-o-animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 2.8s forwards;	/* Opera */}
+
+div.scani#devil-flash1{
+animation: devilscani 1s cubic-bezier(0,.99,1,.01) 3s forwards;
+-moz-animation: devilscani 1s cubic-bezier(0,.99,1,.01) 3s forwards;	/* Firefox */
+-webkit-animation: devilscani 1s cubic-bezier(0,.99,1,.01) 3s forwards;	/* Safari 和 Chrome */
+-o-animation: devilscani 1s cubic-bezier(0,.99,1,.01) 3s forwards;	/* Opera */}
+
+div.scani#devil-ba{
+animation: devilscani4 1s cubic-bezier(0,.99,1,.01) 3.2s forwards;
+-moz-animation: devilscani4 1s cubic-bezier(0,.99,1,.01) 3.2s forwards;	/* Firefox */
+-webkit-animation: devilscani4 1s cubic-bezier(0,.99,1,.01) 3.2s forwards;	/* Safari 和 Chrome */
+-o-animation: devilscani4 1s cubic-bezier(0,.99,1,.01) 3.2s forwards;	/* Opera */}
+
+div.scani#devil-you{
+animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 3.4s forwards;
+-moz-animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 3.4s forwards;	/* Firefox */
+-webkit-animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 3.4s forwards;	/* Safari 和 Chrome */
+-o-animation: devilscani3 1s cubic-bezier(0,.99,1,.01) 3.4s forwards;	/* Opera */}

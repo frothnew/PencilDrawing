@@ -1,0 +1,24 @@
+@charset "utf-8";
+/************************主体*************************/
+@media only screen and (max-height: 949px) {
+}
+
+@media only screen and (max-height: 900px) {
+	ul.devil{height: 900px;}
+	ul.devil li{display: block;width:100%;height: 900px;text-align: center;}
+	ul.devil li div{height: 100%;margin: 0 auto;background:url(../images/devil/devil.png) no-repeat;}
+	
+	div#devil-shan2{background-position:0px 0px;}
+	div#devil-shan1{background-position:-900px 0px;}
+	div#devil-flash1{background-position:-1800px 0px;}
+	div#devil-eay{background-position:-2700px 0px;}
+	div#devil-flash2{background-position:-3600px 0px;}
+	div#devil-mouse{background-position:-4500px 0px;}
+	div#devil-earl{background-position:-5400px 0px;}
+	div#devil-earr{background-position:0px -900px;}
+	div#devil-face{background-position:-900px -900px;}
+	div#devil-ba{background-position:-1800px -900px;}
+	div#devil-you{background-position:-2700px -900px;}
+	div#devil-di{background-position:-3600px -900px;}
+	div#devil-xian{background-position:-4500px -900px;}	
+}

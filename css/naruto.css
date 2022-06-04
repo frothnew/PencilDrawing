@@ -1,0 +1,299 @@
+div#narutoview{
+    width: 84%;
+    height: 90%;
+    margin: 0 auto;
+    padding: 10% 8%;
+    position: relative;
+    perspective: 1200;
+    perspective-origin: 50% 25%;
+    -webkit-perspective: 1200;    
+    -webkit-perspective-origin: 50% 25%;
+}
+
+div.float{
+    /*漂浮*/
+    position: relative;
+    width: 12%;
+}
+div.float.scani{
+    animation: floaty 2s ease-in 2.5s infinite alternate;
+    -moz-animation: floaty 2s ease-in 2.5s infinite alternate;
+    -webkit-animation: floaty 2s ease-in 2.5s infinite alternate;
+    -o-animation: floaty 2s ease-in 2.5s infinite alternate;
+    -ms-animation: floaty 2s ease-in 2.5s infinite alternate;
+    
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;   
+}
+
+
+div.naruto1{top:0;left: 0;}
+div.naruto2{top:0;left: 15%;}
+div.naruto3{top:0;left: 30%;}
+div.naruto4{top:0;left: 45%;}
+div.naruto5{top:0;left: 60%;}
+div.naruto6{top:0;left: 75%;}
+div.naruto7{top:0;left: 90%;}
+div.naruto8{top:300px;left: 0%;}
+div.naruto9{top:300px;left: 15%;}
+div.naruto10{top:300px;left: 30%;}
+div.naruto11{top:300px;left: 45%;}
+div.naruto12{top:300px;left: 60%;}
+div.naruto13{top:300px;left: 75%;}
+div.naruto14{top:300px;left: 90%;}
+
+
+@keyframes floaty
+{
+    0%{-webkit-transform:translate3d(0px,0px,0px);
+    }
+    100%{-webkit-transform:translate3d(0px,20px,0px);
+    }
+}
+@-webkit-keyframes floaty
+{
+    0%{-webkit-transform:translate3d(0px,0px,0px);
+    }
+    100%{-webkit-transform:translate3d(0px,20px,0px);
+    }
+}
+
+div.oneside{
+    font-size: 100px;
+    float: left;
+    border: 1px solid #ada9a6;
+    position: absolute;
+}
+
+
+div.float.scani div.side1{
+        z-index: 6;
+        animation: one 2s ease 0s;
+        -moz-animation: one 2s ease 0s;
+        -webkit-animation: one 2s ease 0s;
+        -o-animation: one 2s ease 0s;
+        -ms-animation: one 2s ease 0s;
+        
+        animation-fill-mode:forwards;
+        -webkit-animation-fill-mode:forwards;
+ }
+
+div.float.scani div.side2{
+        z-index: 5;
+        animation: two 2s ease 0s;
+        -moz-animation: two 2s ease 0s;
+        -webkit-animation: two 2s ease 0s;
+        -o-animation: two 2s ease 0s;
+        -ms-animation: two 2s ease 0s;
+        
+        animation-fill-mode:forwards;
+        -webkit-animation-fill-mode:forwards;
+}
+
+div.float.scani div.side3{
+        z-index: 4;
+        animation: three 2s ease 0s;
+        -moz-animation: three 2s ease 0s;
+        -webkit-animation: three 2s ease 0s;
+        -o-animation: three 2s ease 0s;
+        -ms-animation: three 2s ease 0s;
+        
+        animation-fill-mode:forwards;
+        -webkit-animation-fill-mode:forwards;
+}
+
+div.float.scani div.side4{
+        z-index: 3;
+        animation: four 2s ease 0s;
+        -moz-animation: four 2s ease 0s;
+        -webkit-animation: four 2s ease 0s;
+        -o-animation: four 2s ease 0s;
+        -ms-animation: four 2s ease 0s;
+                
+        animation-fill-mode:forwards;
+        -webkit-animation-fill-mode:forwards;
+}
+
+div.narutopicture{
+        position: absolute;
+        z-index: 7;
+        top: 0;
+        bottom: 0;
+        background:url(../images/naruto/naruto.png) no-repeat;     
+}
+div.float.scani div.narutopicture{
+        animation: narutopicture 1s ease 1.5s;
+        -moz-animation: narutopicture 1s ease 1.5s;
+        -webkit-animation: narutopicture 1s ease 1.5s;
+        -o-animation: narutopicture 1s ease 1.5s;
+        -ms-animation: narutopicture 1s ease 1.5s;
+        
+        animation-fill-mode:forwards;
+        -webkit-animation-fill-mode:forwards;   
+}
+
+
+div#narutopicture1{background-position:0px 0px;}
+div#narutopicture2{background-position:-100px 0px;}
+div#narutopicture3{background-position:-200px 0px;}
+div#narutopicture4{background-position:-300px 0px;}
+div#narutopicture5{background-position:-400px 0px;}
+div#narutopicture6{background-position:-500px 0px;}
+div#narutopicture7{background-position:-600px 0px;}
+div#narutopicture8{background-position:0px -200px;}
+div#narutopicture9{background-position:-100px -200px;}
+div#narutopicture10{background-position:-200px -200px;}
+div#narutopicture11{background-position:-300px -200px;}
+div#narutopicture12{background-position:-400px -200px;}
+div#narutopicture13{background-position:-500px -200px;}
+div#narutopicture14{background-position:-600px -200px;}
+
+
+
+/*picture动画*/
+@keyframes narutopicture
+{
+    0%{opacity: 0;width: 0px;height: 0px;}
+    
+    100%{opacity: 1;width: 100px;height: 200px;
+        -webkit-transform: translatez(50px);
+                transform: translatez(50px);
+
+    }
+}
+@-webkit-keyframes narutopicture
+{
+    0%{opacity: 0;width: 0px;height: 0px;}
+    
+    100%{opacity: 1;width: 100px;height: 200px;
+        -webkit-transform: translatez(50px);
+                transform: translatez(50px);
+
+    }
+}
+
+
+/*一到六号div动画*/
+@keyframes one
+{
+    0%{opacity: 0;width: 0px;height: 0px;}
+
+    100%{opacity: 0.5;width: 100px;height: 200px;
+        
+        -webkit-transform-origin:0% 50%;
+        transform-origin:0% 50%;
+        
+        -webkit-transform:rotatey(-90deg); /* Safari �?Chrome */    /* IE 9 */  /* Firefox */       /* Opera */
+        transform:rotatey(-90deg);
+
+    }
+}
+@-webkit-keyframes one
+{
+    0%{opacity: 0;width: 0px;height: 0px;}
+
+    100%{opacity: 0.5;width: 100px;height: 200px;
+        
+        -webkit-transform-origin:0% 50%;
+        transform-origin:0% 50%;
+        
+        -webkit-transform:rotatey(-90deg); /* Safari �?Chrome */    /* IE 9 */  /* Firefox */       /* Opera */
+        transform:rotatey(-90deg);
+
+    }
+}
+
+@keyframes two
+{
+    0%{opacity: 0;width: 0px;height: 0px;}
+    
+    100%{opacity: 0.5;width:100px;height:200px ;
+        
+        -webkit-transform-origin:50% 0 50px;
+        transform-origin:50% 0 50px;
+        
+        -webkit-transform:rotatey(180deg); /* Safari �?Chrome */    /* IE 9 */  /* Firefox */       /* Opera */
+        transform:rotatey(180deg);        
+    }
+}
+@-webkit-keyframes two
+{
+    0%{opacity: 0;width: 0px;height: 0px;}
+    
+    100%{opacity: 0.5;width:100px;height:200px ;
+        
+        -webkit-transform-origin:50% 0 50px;
+        transform-origin:50% 0 50px;
+        
+        -webkit-transform:rotatey(180deg); /* Safari �?Chrome */    /* IE 9 */  /* Firefox */       /* Opera */
+        transform:rotatey(180deg);        
+    }
+}
+
+
+@keyframes three
+{
+    0%{opacity: 0;width: 0px;height: 0px;}
+
+    100%{opacity: 0.5;width:100px;height:200px ;
+        
+
+        
+        -webkit-transform-origin:100% 50%;
+        transform-origin:100% 50%;
+        
+        -webkit-transform:rotatey(90deg); /* Safari �?Chrome */     /* IE 9 */  /* Firefox */       /* Opera */
+        transform:rotatey(90deg);
+        
+    }
+}
+@-webkit-keyframes three
+{
+    0%{opacity: 0;width: 0px;height: 0px;}
+
+    100%{opacity: 0.5;width:100px;height:200px ;
+        
+
+        
+        -webkit-transform-origin:100% 50%;
+        transform-origin:100% 50%;
+        
+        -webkit-transform:rotatey(90deg); /* Safari �?Chrome */     /* IE 9 */  /* Firefox */       /* Opera */
+        transform:rotatey(90deg);
+        
+    }
+}
+
+@keyframes four
+{
+    0%{opacity: 0;width: 0px;height: 0px;}
+    
+    100%{opacity: 0.5;width:100px;height:200px ;
+        
+
+    
+        -webkit-transform-origin:50% 0%;
+        transform-origin:50% 0%;
+        
+        -webkit-transform:rotatey(180deg); /* Safari �?Chrome */    /* IE 9 */  /* Firefox */       /* Opera */
+        transform:rotatey(180deg);
+    }
+}
+@-webkit-keyframes four
+{
+    0%{opacity: 0;width: 0px;height: 0px;}
+    
+    100%{opacity: 0.5;width:100px;height:200px ;
+        
+
+    
+        -webkit-transform-origin:50% 0%;
+        transform-origin:50% 0%;
+        
+        -webkit-transform:rotatey(180deg); /* Safari �?Chrome */    /* IE 9 */  /* Firefox */       /* Opera */
+        transform:rotatey(180deg);
+    }
+}
+
